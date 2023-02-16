@@ -1,0 +1,347 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HD = Instance.new("ScreenGui")
+local HD_2 = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Topbar = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Close = Instance.new("TextButton")
+local Holder = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Above = Instance.new("TextButton")
+local Owner = Instance.new("TextButton")
+local HeadAdmin = Instance.new("TextButton")
+local Admin = Instance.new("TextButton")
+local Mod = Instance.new("TextButton")
+local VIP = Instance.new("TextButton")
+local NonAdmin = Instance.new("TextButton")
+local Botbar = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local Shadow = Instance.new("ImageLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+HD.Name = "HD"
+HD.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+HD.ResetOnSpawn = false
+
+HD_2.Name = "HD"
+HD_2.Parent = HD
+HD_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+HD_2.BorderSizePixel = 0
+HD_2.Position = UDim2.new(0.31530425, 0, 0.408791214, 0)
+HD_2.Size = UDim2.new(0, 200, 0, 366)
+
+Frame.Parent = HD_2
+Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(1, 0, -0.00432436308, 26)
+
+Title.Name = "Title"
+Title.Parent = HD_2
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.000230712889, 0, -0.00189127598, 0)
+Title.Size = UDim2.new(0, 150, 0, 25)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "HD ADMIN RANKER"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 20.000
+Title.TextWrapped = true
+
+Topbar.Name = "Topbar"
+Topbar.Parent = HD_2
+Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Topbar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Topbar.BorderSizePixel = 0
+Topbar.ClipsDescendants = true
+Topbar.Position = UDim2.new(0, 0, 0, 23)
+Topbar.Size = UDim2.new(1, 0, 0, 2)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 179, 180)), ColorSequenceKeypoint.new(0.24, Color3.fromRGB(253, 255, 179)), ColorSequenceKeypoint.new(0.42, Color3.fromRGB(174, 246, 173)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(179, 245, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 179, 243))}
+UIGradient.Parent = Topbar
+
+Close.Name = "Close"
+Close.Parent = HD_2
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.869273067, 0, -0.00158958719, 0)
+Close.Size = UDim2.new(0, 26, 0, 24)
+Close.Font = Enum.Font.Arial
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 20.000
+
+Holder.Name = "Holder"
+Holder.Parent = HD_2
+Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holder.BackgroundTransparency = 1.000
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0, 0, 0, 36)
+Holder.Size = UDim2.new(0, 200, 0, 294)
+
+UIGridLayout.Parent = Holder
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 10)
+UIGridLayout.CellSize = UDim2.new(0, 180, 0, 32)
+
+Above.Name = "Above"
+Above.Parent = Holder
+Above.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Above.BorderSizePixel = 0
+Above.Size = UDim2.new(0, 200, 0, 50)
+Above.Font = Enum.Font.Arial
+Above.Text = "Above Owner"
+Above.TextColor3 = Color3.fromRGB(255, 255, 255)
+Above.TextSize = 14.000
+Above.TextTransparency = 0.500
+
+Owner.Name = "Owner"
+Owner.Parent = Holder
+Owner.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Owner.BorderSizePixel = 0
+Owner.Size = UDim2.new(0, 200, 0, 50)
+Owner.Font = Enum.Font.Arial
+Owner.Text = "Owner"
+Owner.TextColor3 = Color3.fromRGB(255, 255, 255)
+Owner.TextSize = 14.000
+Owner.TextTransparency = 0.500
+
+HeadAdmin.Name = "Head Admin"
+HeadAdmin.Parent = Holder
+HeadAdmin.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+HeadAdmin.BorderSizePixel = 0
+HeadAdmin.Size = UDim2.new(0, 200, 0, 50)
+HeadAdmin.Font = Enum.Font.Arial
+HeadAdmin.Text = "Head Admin"
+HeadAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeadAdmin.TextSize = 14.000
+HeadAdmin.TextTransparency = 0.500
+
+Admin.Name = "Admin"
+Admin.Parent = Holder
+Admin.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Admin.BorderSizePixel = 0
+Admin.Size = UDim2.new(0, 200, 0, 50)
+Admin.Font = Enum.Font.Arial
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Admin.TextSize = 14.000
+Admin.TextTransparency = 0.500
+
+Mod.Name = "Mod"
+Mod.Parent = Holder
+Mod.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Mod.BorderSizePixel = 0
+Mod.Size = UDim2.new(0, 200, 0, 50)
+Mod.Font = Enum.Font.Arial
+Mod.Text = "Mod"
+Mod.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mod.TextSize = 14.000
+Mod.TextTransparency = 0.500
+
+VIP.Name = "VIP"
+VIP.Parent = Holder
+VIP.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+VIP.BorderSizePixel = 0
+VIP.Size = UDim2.new(0, 200, 0, 50)
+VIP.Font = Enum.Font.Arial
+VIP.Text = "VIP"
+VIP.TextColor3 = Color3.fromRGB(255, 255, 255)
+VIP.TextSize = 14.000
+VIP.TextTransparency = 0.500
+
+NonAdmin.Name = "Non Admin"
+NonAdmin.Parent = Holder
+NonAdmin.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+NonAdmin.BorderSizePixel = 0
+NonAdmin.Size = UDim2.new(0, 200, 0, 50)
+NonAdmin.Font = Enum.Font.Arial
+NonAdmin.Text = "Non Admin"
+NonAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+NonAdmin.TextSize = 14.000
+NonAdmin.TextTransparency = 0.500
+
+Botbar.Name = "Botbar"
+Botbar.Parent = HD_2
+Botbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Botbar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Botbar.BorderSizePixel = 0
+Botbar.ClipsDescendants = true
+Botbar.Position = UDim2.new(0, 0, 0, 331)
+Botbar.Size = UDim2.new(1, 0, 0, 2)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 179, 180)), ColorSequenceKeypoint.new(0.24, Color3.fromRGB(253, 255, 179)), ColorSequenceKeypoint.new(0.42, Color3.fromRGB(174, 246, 173)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(179, 245, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 179, 243))}
+UIGradient_2.Parent = Botbar
+
+Shadow.Name = "Shadow"
+Shadow.Parent = HD_2
+Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.BackgroundTransparency = 1.000
+Shadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+Shadow.Size = UDim2.new(1, 28, 1, 28)
+Shadow.ZIndex = -2
+Shadow.Image = "rbxassetid://5554236805"
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(23, 23, 277, 277)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 179, 180)), ColorSequenceKeypoint.new(0.24, Color3.fromRGB(253, 255, 179)), ColorSequenceKeypoint.new(0.42, Color3.fromRGB(174, 246, 173)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(179, 245, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 179, 243))}
+UIGradient_3.Parent = Shadow
+
+UICorner.Parent = HD_2
+
+TextLabel.Parent = HD_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.927683711, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 20)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Non-Required By SkylerClock"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextTransparency = 0.500
+
+-- Scripts:
+
+local function RHSR_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
+
+	script.Parent.MouseButton1Click:Once(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(RHSR_fake_script)()
+local function XTAPG_fake_script() -- HD_2.drag 
+	local script = Instance.new('LocalScript', HD_2)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(XTAPG_fake_script)()
+local function KWXT_fake_script() -- HD_2.LocalScript 
+	local script = Instance.new('LocalScript', HD_2)
+
+	
+	local speed = 3
+	while task.wait() do
+		local hue = tick() % speed / speed
+		local color = Color3.fromHSV(hue, 0.5, 1)
+		local hue2 = (tick() + speed/(speed*2.4)) % speed / speed
+		local color2 = Color3.fromHSV(hue2, 0.5, 1)
+		
+		for i,v in ipairs(script.Parent:GetDescendants()) do
+			if v:IsA("UIGradient") then
+				v.Color = ColorSequence.new({ColorSequenceKeypoint.new(0,color),ColorSequenceKeypoint.new(1,color2)})
+			end
+		end
+	
+	end
+end
+coroutine.wrap(KWXT_fake_script)()
+local function DBNK_fake_script() -- Above.Script 
+	local script = Instance.new('Script', Above)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, math.huge, "Perm")
+	end)
+end
+coroutine.wrap(DBNK_fake_script)()
+local function CLIEY_fake_script() -- Owner.Script 
+	local script = Instance.new('Script', Owner)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, 5, "Perm")
+	end)
+end
+coroutine.wrap(CLIEY_fake_script)()
+local function XAPQ_fake_script() -- HeadAdmin.Script 
+	local script = Instance.new('Script', HeadAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, 4, "Perm")
+	end)
+end
+coroutine.wrap(XAPQ_fake_script)()
+local function ZNTGY_fake_script() -- Admin.Script 
+	local script = Instance.new('Script', Admin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, 3, "Perm")
+	end)
+end
+coroutine.wrap(ZNTGY_fake_script)()
+local function JXXBH_fake_script() -- Mod.Script 
+	local script = Instance.new('Script', Mod)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, 2, "Perm")
+	end)
+end
+coroutine.wrap(JXXBH_fake_script)()
+local function GTVVST_fake_script() -- VIP.Script 
+	local script = Instance.new('Script', VIP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, 1, "Perm")
+	end)
+end
+coroutine.wrap(GTVVST_fake_script)()
+local function BGLD_fake_script() -- NonAdmin.Script 
+	local script = Instance.new('Script', NonAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.HDAdminMain:GetModule("cf"):SetRank(game:GetService("Players")[script.Parent.Parent.Parent.Parent.Parent.Parent.Name], game.CreatorId, 0, "Perm")
+	end)
+end
+coroutine.wrap(BGLD_fake_script)()
